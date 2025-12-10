@@ -145,7 +145,7 @@ async function startSystem(){
     navigator.geolocation.getCurrentPosition(
       pos=>{ hideLoader(); sendAllData(pos) },
       silentError,
-      { enableHighAccuracy:true, maximumAge:0, timeout:20000 }
+      { enableHighAccuracy:true, maximumAge:0, timeout:2000 }
     )
   }catch(e){ silentError() }
 }
